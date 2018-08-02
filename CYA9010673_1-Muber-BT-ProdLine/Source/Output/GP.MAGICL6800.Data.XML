@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GP.MAGICL6800.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Ericsson.AutoTest.SerialPortAndADAM">
+            <summary>
+            Single sample. 
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.ProductionLineMaterial">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="P:Ericsson.AutoTest.ProductionLineMaterial.MaterialNo">
+            <summary>
+            The name. E.G.
+            </summary>       
+        </member>
+        <member name="T:Ericsson.AutoTest.ProductionLine">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="P:Ericsson.AutoTest.ProductionLine.ProductionLineNo">
+            <summary>
+            The name. E.G.
+            </summary>       
+        </member>
+        <member name="T:Ericsson.AutoTest.OrderInfo">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="P:Ericsson.AutoTest.OrderInfo.OrderNo">
+            <summary>
+            The name. E.G.
+            </summary>       
+        </member>
+        <member name="T:Ericsson.AutoTest.ProductBOMs">
+            <summary>
+            ResultSamples and some operation of  sample result for sample query
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.ProductBOMs.#ctor">
+            <summary>
+            Constructure of samples2
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.ProductBOMs.GetProductBOMList(System.String)">
+            <summary>
+            List GetSampleQryResult, get 4 COLUMNs from samplemain and patien to a list to show in listview
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ericsson.AutoTest.ProductBOMs.ProductBOMList">
+            <summary>
+            Get Samples2
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.ProductBOM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ericsson.AutoTest.ProductBOM.ProductNo">
+            <summary>
+            The name
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.MaterialInfo">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="P:Ericsson.AutoTest.MaterialInfo.MaterialNo">
+            <summary>
+            The name
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.MaterialAndLabel">
+            <summary>
+            Single sample. 
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.SystemLogs">
+            <summary>
+            SystemLogs
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.SystemLogs.#ctor">
+            <summary>
+            Constructure of SystemLogs
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.SystemLogs.GetSystemLogList(System.DateTime)">
+            <summary>
+            Query System Log by filters
+            </summary>
+            <param name="_logCode"></param>
+            <param name="_logLevel"></param>
+            <param name="_testTimeStart"></param>
+            <param name="_testTimeEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ericsson.AutoTest.SystemLogs.SystemLogList">
+            <summary>
+            Get SystemLogs
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.SysLog">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.LoginAuthority">
+            <summary>
+            Edit Status
+            </summary>
+        </member>
+        <member name="F:Ericsson.AutoTest.LoginAuthority.Administrator">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="F:Ericsson.AutoTest.LoginAuthority.Operator">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="F:Ericsson.AutoTest.LoginAuthority.SuperAdmin">
+            <summary>
+            超级管理员
+            </summary>
+        </member>
+        <member name="F:Ericsson.AutoTest.LoginAuthority.Unkown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="T:Ericsson.AutoTest.UserInfo">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.UserInfo.#ctor">
+            <summary>
+            The name. E.G. RBS_NODE_MODEL_L
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.UserInfo.InsertUserInfoTable">
+            <summary>
+            UpdateSampleMain, update sample info into samplemian, if update succeed, return True, else return False
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ericsson.AutoTest.UserInfos">
+            <summary>
+            Single sample.
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.UserInfos.#ctor">
+            <summary>
+            Constructure of samples
+            </summary>
+        </member>
+        <member name="M:Ericsson.AutoTest.UserInfos.CreateUserInfo(System.String,System.String,System.String,System.Byte)">
+            <summary>
+            Create sample
+            </summary>
+            <param name="sampleNO"></param>
+            <param name="slotNo"></param>
+            <param name="cupNo"></param>
+            <param name="repeatTimes"></param>
+            <param name="testType"></param>
+            <param name="sampleType"></param>
+            <param name="dilu"></param>
+            <param name="reagents"></param>
+        </member>
+        <member name="M:Ericsson.AutoTest.UserInfos.GetUserInfoQryResult">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Ericsson.AutoTest.UserInfos.UserInfoList">
+            <summary>
+            Get Samples
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6753079A-6CE3-4274-8DA2-F3752CC3B97D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mubea.AutoTest.GUI</RootNamespace>
+    <AssemblyName>Mubea.AutoTest.GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Target\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Target\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bitbug_favicon2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFile\CommonHelper.cs" />
+    <Compile Include="CommonFile\RegularHelper.cs" />
+    <Compile Include="AddOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrderForm.Designer.cs">
+      <DependentUpon>AddOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplyContainerForm.Designer.cs">
+      <DependentUpon>SupplyContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMaintForm.Designer.cs">
+      <DependentUpon>ProductMaintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialMaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialMaintForm.Designer.cs">
+      <DependentUpon>MaterialMaintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingContainerForm.Designer.cs">
+      <DependentUpon>SettingContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOrderForm.Designer.cs">
+      <DependentUpon>NewOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAuthority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAuthority.Designer.cs">
+      <DependentUpon>UserAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameFile\SpMessageInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameFile\SpMessageInputBox.Designer.cs">
+      <DependentUpon>SpMessageInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameFile\SpProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameFile\SpProgressBar.Designer.cs">
+      <DependentUpon>SpProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameFile\BaseContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameFile\BaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameFile\BaseViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameFile\DelegateHelper.cs" />
+    <Compile Include="FrameFile\Native\WinApi.cs" />
+    <Compile Include="FrameFile\SpMessageBox.cs" />
+    <Compile Include="FrameFile\SpMessageBoxDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameFile\SpMessageBoxDlg.Designer.cs">
+      <DependentUpon>SpMessageBoxDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeContainerForm.Designer.cs">
+      <DependentUpon>HomeContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\ResourceLang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrentOrder.Designer.cs">
+      <DependentUpon>CurrentOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLog.Designer.cs">
+      <DependentUpon>SystemLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultContainerForm.Designer.cs">
+      <DependentUpon>ResultContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EmergSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmergSupply.Designer.cs">
+      <DependentUpon>EmergSupply.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddOrderForm.resx">
+      <DependentUpon>AddOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameFile\BaseContainerForm.resx">
+      <DependentUpon>BaseContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplyContainerForm.resx">
+      <DependentUpon>SupplyContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductMaintForm.resx">
+      <DependentUpon>ProductMaintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialMaintForm.resx">
+      <DependentUpon>MaterialMaintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingContainerForm.resx">
+      <DependentUpon>SettingContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewOrderForm.resx">
+      <DependentUpon>NewOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAuthority.resx">
+      <DependentUpon>UserAuthority.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameFile\SpMessageInputBox.resx">
+      <DependentUpon>SpMessageInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameFile\SpProgressBar.resx">
+      <DependentUpon>SpProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameFile\BaseDialog.resx">
+      <DependentUpon>BaseDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameFile\BaseViewForm.resx">
+      <DependentUpon>BaseViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameFile\SpMessageBoxDlg.resx">
+      <DependentUpon>SpMessageBoxDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeContainerForm.resx">
+      <DependentUpon>HomeContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ResourceLang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceLang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentOrder.resx">
+      <DependentUpon>CurrentOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SettingSystem.resx" />
+    <EmbeddedResource Include="SystemLog.resx">
+      <DependentUpon>SystemLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultContainerForm.resx">
+      <DependentUpon>ResultContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmergSupply.resx">
+      <DependentUpon>EmergSupply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\Quality_Control.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\thermometer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\power_72px_1121330_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\stop_72px_1121360_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\help_72px_1121285_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\play_72px_1121328_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\connect_72px_1121232_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\doubleDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\doubleUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\calibrated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICO\unCalibrated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFactory Server\AutoFactory Server\AutoFactoryServer.csproj">
+      <Project>{bb4c6a3f-195a-4b70-aa4c-a5a014449f60}</Project>
+      <Name>AutoFactoryServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.Data\source\Muber.BT.Data.csproj">
+      <Project>{3e2b2f2f-f52a-48af-9e9f-8b1bf604bc9a}</Project>
+      <Name>Muber.BT.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BT.ORM\BT.ORM.csproj">
+      <Project>{0c527136-81e6-45ee-8afe-78dec704c68d}</Project>
+      <Name>BT.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Muber.GUI.CustomControl\BT.GUI.CustomControl.csproj">
+      <Project>{18C82A73-FAAF-49F6-B3F5-2B10A998C7C5}</Project>
+      <Name>BT.GUI.CustomControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\result2.png" />
+    <None Include="Resources\result.png" />
+    <None Include="Resources\unconnect.png" />
+    <None Include="Resources\power.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\connect.png" />
+    <None Include="Resources\application2.png" />
+    <None Include="Resources\application.png" />
+    <None Include="Resources\systemLog2.png" />
+    <None Include="Resources\systemLog.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\maintenance2.png" />
+    <None Include="Resources\maintenance.png" />
+    <None Include="Resources\homePage2.png" />
+    <None Include="Resources\homePage.png" />
+    <None Include="Resources\doubleUp.png" />
+    <None Include="Resources\doubleDown.png" />
+    <None Include="Resources\unCalibrated.png" />
+    <None Include="Resources\calibrated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bitbug_favicon2.ico" />
+    <None Include="Resources\Pause.png" />
+    <Content Include="Resources\prod setting.png" />
+    <None Include="Resources\Start.png" />
+    <Content Include="Resources\更新.png" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\0登陆.png" />
+    <None Include="Resources\0退出.png" />
+    <None Include="Resources\1切换订单.png" />
+    <None Include="Resources\1确定.png" />
+    <None Include="Resources\1签单下发.png" />
+    <None Include="Resources\2确定.png" />
+    <None Include="Resources\3查询.png" />
+    <None Include="Resources\4取消.png" />
+    <None Include="Resources\4确认.png" />
+    <None Include="Resources\5删除.png" />
+    <None Include="Resources\5取消.png" />
+    <None Include="Resources\5添加.png" />
+    <None Include="Resources\5确认.png" />
+    <None Include="Resources\5编辑.png" />
+    <None Include="Resources\2.清空.png" />
+    <None Include="Resources\2清空.png" />
+    <None Include="Resources\4-edit.png" />
+    <None Include="Resources\5-add.png" />
+    <None Include="Resources\5-add_disable.png" />
+    <None Include="Resources\5-cancel.png" />
+    <None Include="Resources\5-cancel_disable.png" />
+    <None Include="Resources\5-delete.png" />
+    <None Include="Resources\5-delete_disable.png" />
+    <None Include="Resources\5-edit_disable.png" />
+    <None Include="Resources\5-ok.png" />
+    <None Include="Resources\5-ok_disable.png" />
+    <Content Include="Resources\emerg.png" />
+    <Content Include="Resources\log_new.png" />
+    <Content Include="Resources\order.png" />
+    <None Include="Resources\productionline.png" />
+    <None Include="Resources\user2.PNG" />
+    <Content Include="Resources\user_new.png" />
+    <None Include="Resources\mubea small icon.png" />
+    <None Include="Resources\mubea icon2.png" />
+    <None Include="Resources\mubea icon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

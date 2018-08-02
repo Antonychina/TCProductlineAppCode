@@ -1,0 +1,11 @@
+element * CHECKEDOUT
+
+element .../CYA9010673_1-Ericsson.AutoTest.Server/... /main/nj_release/nj_cya9010673_1_r1a_dev/LATEST
+element .../CYA9010673_1-Ericsson.AutoTest.Server/... /main/nj_release/LATEST -mkbranch nj_cya9010673_1_r1a_dev
+element .../CYA9010673_1-Ericsson.AutoTest.Server/... /main/nj_release/LATEST
+element .../CYA9010673_1-Ericsson.AutoTest.Server/... /main/LATEST -mkbranch nj_release
+element .../CYA9010673_1-Ericsson.AutoTest.Server/... /main/LATEST
+
+element * .../nj_release/LATEST 
+
+element * /main/LATEST

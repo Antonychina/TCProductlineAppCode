@@ -1,0 +1,4 @@
+2017-05-23 17:07:58 Recv: client :8090->150.236.53.50:62128is disconnect from server
+
+2017-05-23 17:07:58 Recv: <5/23/2017 5:07:58 PM>  plc is disconnected now
+

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E2B2F2F-F52A-48AF-9E9F-8B1BF604BC9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GP.MAGICL6800.Data</RootNamespace>
+    <AssemblyName>GP.MAGICL6800.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Output\GP.MAGICL6800.Data.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GP.MAGICL6800.FitArith, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\GP.MAGICL6800.FitArith.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\ComSerialAndADAM.cs" />
+    <Compile Include="Objects\ProductionLineMaterial.cs" />
+    <Compile Include="Objects\ProductionLineInfo.cs" />
+    <Compile Include="Objects\OrderInfo.cs" />
+    <Compile Include="Objects\ProductBOMs.cs" />
+    <Compile Include="Objects\ProductBOM.cs" />
+    <Compile Include="Objects\MaterialInfo.cs" />
+    <Compile Include="Objects\MaterialAndLabel.cs" />
+    <Compile Include="Objects\Systemlogs.cs" />
+    <Compile Include="Objects\Systemlog.cs" />
+    <Compile Include="Users\LoginAuthority.cs" />
+    <Compile Include="Users\UserInfo.cs" />
+    <Compile Include="Users\UserInfos.cs" />
+    <Compile Include="Objects\Classes\DatabaseHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BT.ORM\BT.ORM.csproj">
+      <Project>{0c527136-81e6-45ee-8afe-78dec704c68d}</Project>
+      <Name>GP.MAGICL6800.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GP.MAGICL6800.Definition\source\GP.MAGICL6800.Definition.csproj">
+      <Project>{af6bbb62-2aaf-498d-b789-14e1cbb6c378}</Project>
+      <Name>GP.MAGICL6800.Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GP.MAGICL6800.Utility\source\GP.MAGICL6800.Utility.csproj">
+      <Project>{3af244a6-79f3-4620-a656-c6cb833900b8}</Project>
+      <Name>GP.MAGICL6800.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

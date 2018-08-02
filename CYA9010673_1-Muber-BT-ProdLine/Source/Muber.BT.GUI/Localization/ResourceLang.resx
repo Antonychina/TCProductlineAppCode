@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BarcodeNameRule" xml:space="preserve">
+    <value>条码号必须是10位数字</value>
+  </data>
+  <data name="BedNONameRule" xml:space="preserve">
+    <value>病床号必须是3位数字</value>
+  </data>
+  <data name="DefaultValueInput" xml:space="preserve">
+    <value>不允许输入默认值</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="NoMaintTaskSelected" xml:space="preserve">
+    <value>请选择维护任务</value>
+  </data>
+  <data name="NoSampleNOFound" xml:space="preserve">
+    <value>请先选择已经编排样本</value>
+  </data>
+  <data name="PatientNONameRule" xml:space="preserve">
+    <value>病人编号必须是5位数数字</value>
+  </data>
+  <data name="PleaseInput" xml:space="preserve">
+    <value>请输入</value>
+  </data>
+  <data name="ProjItemNotDefined" xml:space="preserve">
+    <value>未找到项目名对应的项目号：</value>
+  </data>
+  <data name="SelectEditableSample" xml:space="preserve">
+    <value>请选择可编排样本</value>
+  </data>
+  <data name="SelectQCLotItem" xml:space="preserve">
+    <value>请选择需要编辑的QClot</value>
+  </data>
+  <data name="SysLogLvlAll" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="SysLogLvlMajor" xml:space="preserve">
+    <value>严重故障</value>
+  </data>
+  <data name="SysLogLvlNormal" xml:space="preserve">
+    <value>常规操作</value>
+  </data>
+  <data name="SysLogLvlUnkwn" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="SysLogLvlWarn" xml:space="preserve">
+    <value>告警故障</value>
+  </data>
+  <data name="SystemInitalize_OK" xml:space="preserve">
+    <value>系统初始化成功</value>
+  </data>
+  <data name="TreatAreaNameRule" xml:space="preserve">
+    <value>就诊区必须是2位数字</value>
+  </data>
+  <data name="TreatIDNameRule" xml:space="preserve">
+    <value>就诊号必须是10位数字</value>
+  </data>
+  <data name="UnableChangeSelectedItem" xml:space="preserve">
+    <value>编辑状态下不允许重新选择</value>
+  </data>
+  <data name="AverageRLU" xml:space="preserve">
+    <value>平均发光值</value>
+  </data>
+  <data name="Conc" xml:space="preserve">
+    <value>浓度</value>
+  </data>
+  <data name="CV" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <data name="E" xml:space="preserve">
+    <value>偏差</value>
+  </data>
+  <data name="ExpectedRLU" xml:space="preserve">
+    <value>期望发光值</value>
+  </data>
+  <data name="RLU1" xml:space="preserve">
+    <value>发光值一</value>
+  </data>
+  <data name="RLU2" xml:space="preserve">
+    <value>发光值二</value>
+  </data>
+  <data name="RLU3" xml:space="preserve">
+    <value>发光值三</value>
+  </data>
+  <data name="ClibChartNameExpected" xml:space="preserve">
+    <value>浓度发光期望曲线</value>
+  </data>
+  <data name="printtemplate" xml:space="preserve">
+    <value>打印模板</value>
+  </data>
+  <data name="templateFN_Sun" xml:space="preserve">
+    <value>孙</value>
+  </data>
+  <data name="templateFN_Wang" xml:space="preserve">
+    <value>王</value>
+  </data>
+  <data name="templateFN_Zhang" xml:space="preserve">
+    <value>张</value>
+  </data>
+  <data name="templateHN_Hospiatl" xml:space="preserve">
+    <value>南京鼓楼医院</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>基蛋生物科技 全自动化学发光分析仪 操作软件 V1.2</value>
+  </data>
+  <data name="ResultCurve_ItemNotSelected" xml:space="preserve">
+    <value>请选择项目</value>
+  </data>
+  <data name="MaintItemRunning" xml:space="preserve">
+    <value>任务执行中</value>
+  </data>
+  <data name="MaintRunningShow" xml:space="preserve">
+    <value>正在执行中，请耐心等待...</value>
+  </data>
+  <data name="MaintDialogTitle" xml:space="preserve">
+    <value>仪器维护</value>
+  </data>
+  <data name="MaintTimeCalc" xml:space="preserve">
+    <value>计算下次维护时间失败</value>
+  </data>
+  <data name="NoMaintItemSelected" xml:space="preserve">
+    <value>请至少选择一个维护项目</value>
+  </data>
+  <data name="ReagentDoorOpen" xml:space="preserve">
+    <value>告警： 试剂仓门开启</value>
+  </data>
+  <data name="ScanFailed" xml:space="preserve">
+    <value>号槽试剂的射频卡扫描失败，请重新扫描后插入！</value>
+  </data>
+  <data name="TaskDownLoadFail" xml:space="preserve">
+    <value>任务下发失败，任务序号：</value>
+  </data>
+  <data name="AgeUnit_Day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="AgeUnit_Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="AgeUnit_Year" xml:space="preserve">
+    <value>岁</value>
+  </data>
+  <data name="PrimiingFlow_NOK" xml:space="preserve">
+    <value>整机灌注失败</value>
+  </data>
+  <data name="ClearCup_NOK" xml:space="preserve">
+    <value>清杯失败</value>
+  </data>
+  <data name="LuminoMeasure_NOK" xml:space="preserve">
+    <value>测量室测量失败</value>
+  </data>
+  <data name="LuminoPour_NOK" xml:space="preserve">
+    <value>测量室灌注失败</value>
+  </data>
+  <data name="LeftArmClean_NOK" xml:space="preserve">
+    <value>左臂清洗失败</value>
+  </data>
+  <data name="PushCup_NOK" xml:space="preserve">
+    <value>推杯失败</value>
+  </data>
+  <data name="SampleUpdateOK" xml:space="preserve">
+    <value>样本结果修改成功</value>
+  </data>
+  <data name="SystemInitalize_NOK" xml:space="preserve">
+    <value>系统初始化失败</value>
+  </data>
+  <data name="SystTestProgFormText" xml:space="preserve">
+    <value>正在执行系统测试, 请稍等...</value>
+  </data>
+  <data name="SystTestDialogTitle" xml:space="preserve">
+    <value>系统测试</value>
+  </data>
+  <data name="WashStationPriming_NOK" xml:space="preserve">
+    <value>清洗站灌注失败</value>
+  </data>
+  <data name="ComBoxSelection" xml:space="preserve">
+    <value>请选择</value>
+  </data>
+  <data name="LogCodeInputRule" xml:space="preserve">
+    <value>请输入字母或数字</value>
+  </data>
+  <data name="LogCodeRule" xml:space="preserve">
+    <value>您输入的日志代码非法，请重新输入</value>
+  </data>
+  <data name="SampleDeleteNOK" xml:space="preserve">
+    <value>样本删除失败</value>
+  </data>
+  <data name="SampleDeleteOK" xml:space="preserve">
+    <value>样本删除成功</value>
+  </data>
+  <data name="SampleDeleteWarning" xml:space="preserve">
+    <value>您确定要删除选中的样本吗？</value>
+  </data>
+  <data name="SampleDialogTitle" xml:space="preserve">
+    <value>样本结果</value>
+  </data>
+  <data name="SampleUpdateNOK" xml:space="preserve">
+    <value>样本结果修改失败</value>
+  </data>
+  <data name="StartEndTimeRule" xml:space="preserve">
+    <value>起始日期大于结束日期,请重新选择</value>
+  </data>
+  <data name="SystemLogDialogTitle" xml:space="preserve">
+    <value>系统日志</value>
+  </data>
+  <data name="NoSampleSelected" xml:space="preserve">
+    <value>请先选择样本</value>
+  </data>
+  <data name="SampleResultCurve_DataErr" xml:space="preserve">
+    <value>RLUPoints值异常!</value>
+  </data>
+  <data name="SampleResultCurve_DialogTitle" xml:space="preserve">
+    <value>反应曲线</value>
+  </data>
+  <data name="CurrentMaintLogIsNull" xml:space="preserve">
+    <value>当前仪器维护日志为空</value>
+  </data>
+  <data name="CVCalcDialogTitle" xml:space="preserve">
+    <value>CV值计算</value>
+  </data>
+  <data name="CVCalculateErr" xml:space="preserve">
+    <value>相同编号的样本结果记录太少, 无法计算CV值</value>
+  </data>
+  <data name="ItemQueryDialogTitle" xml:space="preserve">
+    <value>项目结果</value>
+  </data>
+  <data name="ClearCup_OK" xml:space="preserve">
+    <value>清杯成功</value>
+  </data>
+  <data name="LuminoMeasure_OK" xml:space="preserve">
+    <value>请点击确定，开始测量室测量</value>
+  </data>
+  <data name="LuminoPour_OK" xml:space="preserve">
+    <value>测量室灌注成功</value>
+  </data>
+  <data name="ArmsClean_OK" xml:space="preserve">
+    <value>管路清洗成功</value>
+  </data>
+  <data name="PushCup_OK" xml:space="preserve">
+    <value>推杯成功</value>
+  </data>
+  <data name="WashStationPriming_OK" xml:space="preserve">
+    <value>清洗站灌注成功</value>
+  </data>
+  <data name="LuminoMeasure_DataErr" xml:space="preserve">
+    <value>测量室测试返回数据错误</value>
+  </data>
+  <data name="PrgFormText_ArmsClean" xml:space="preserve">
+    <value>正在执行管路清洗测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_ArmsPour" xml:space="preserve">
+    <value>正在执行加样臂灌注测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_ClearCup" xml:space="preserve">
+    <value>正在执行清杯测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_Initialize" xml:space="preserve">
+    <value>正在执行初始化测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_LuminoMeasure" xml:space="preserve">
+    <value>正在执行测量室测量测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_LuminoPour" xml:space="preserve">
+    <value>正在执行测量室灌注测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_PushCup" xml:space="preserve">
+    <value>正在执行推杯测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_WashStationPour" xml:space="preserve">
+    <value>正在执行清洗站灌注测试, 请稍等...</value>
+  </data>
+  <data name="RightArmClean_NOK" xml:space="preserve">
+    <value>右臂清洗失败</value>
+  </data>
+  <data name="SystemTestException" xml:space="preserve">
+    <value>异常的系统测试，请联系管理员</value>
+  </data>
+  <data name="SysTestType_LuminousValueTest" xml:space="preserve">
+    <value>发光值测试</value>
+  </data>
+  <data name="MaintFreq_All" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="MaintFreq_Annually" xml:space="preserve">
+    <value>每年</value>
+  </data>
+  <data name="MaintFreq_Daily" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="MaintFreq_Monthly" xml:space="preserve">
+    <value>每月</value>
+  </data>
+  <data name="MaintFreq_Quarterly" xml:space="preserve">
+    <value>每季度</value>
+  </data>
+  <data name="MaintFreq_Weekly" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="SysTestType_else" xml:space="preserve">
+    <value>其它类型测试</value>
+  </data>
+  <data name="SampleNumber" xml:space="preserve">
+    <value>样本号:</value>
+  </data>
+  <data name="SampleNOFormatNotCorrect" xml:space="preserve">
+    <value>样本编号格式不正确</value>
+  </data>
+  <data name="QCHigh" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="QCLow" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="QCMiddle" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="中" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="低" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="高" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SampleAdvQryConditionInput" xml:space="preserve">
+    <value>只能输入字母和数字</value>
+  </data>
+  <data name="SampleAdvQryDialogTitle" xml:space="preserve">
+    <value>高级查询</value>
+  </data>
+  <data name="SampleNOAllReadyExist" xml:space="preserve">
+    <value>样本编号已经存在</value>
+  </data>
+  <data name="Sex_else" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="PrimiingFlow_OK" xml:space="preserve">
+    <value>整机灌注成功</value>
+  </data>
+  <data name="PleaseInputCorrectQCItemValue" xml:space="preserve">
+    <value>请输入正确的QCItem值</value>
+  </data>
+  <data name="PleaseInputCorrectQCLotValue" xml:space="preserve">
+    <value>请输入正确的QCLot值</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>无效</value>
+  </data>
+  <data name="Valid" xml:space="preserve">
+    <value>有效</value>
+  </data>
+  <data name="QCResultChar" xml:space="preserve">
+    <value>质控图</value>
+  </data>
+  <data name="PleasePullOutReagent" xml:space="preserve">
+    <value>请拔出机器启动前插入的试剂盒：</value>
+  </data>
+  <data name="PlesePullOutSample" xml:space="preserve">
+    <value>请拔出机器启动前插入的样本盒：</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="IllegalOpertionOnReagent" xml:space="preserve">
+    <value>拔出的试剂不存在：未初始化机器或者初始化过程中拔出试剂</value>
+  </data>
+  <data name="IllegalOpertionOnSample" xml:space="preserve">
+    <value>拔出的样本不存在：未初始化机器或者初始化过程中拔出样本</value>
+  </data>
+  <data name="TaskDeleteWarning" xml:space="preserve">
+    <value>确定要删除任务？</value>
+  </data>
+  <data name="QCLotChangeWarning" xml:space="preserve">
+    <value>点击确定修改质控批号，否则点击取消</value>
+  </data>
+  <data name="AgeInputWarning" xml:space="preserve">
+    <value>只允许输入0~200的整数</value>
+  </data>
+  <data name="QCLotDeleteWarning" xml:space="preserve">
+    <value>点击确定修改质控批号，否则点击取消</value>
+  </data>
+  <data name="PleaseInputAuditor" xml:space="preserve">
+    <value>请输入检验者</value>
+  </data>
+  <data name="PleaseInputBarcode" xml:space="preserve">
+    <value>请输入样本条码号</value>
+  </data>
+  <data name="PleaseInputBedNo" xml:space="preserve">
+    <value>请输入病床号</value>
+  </data>
+  <data name="PleaseInputChecker" xml:space="preserve">
+    <value>请输入审核者</value>
+  </data>
+  <data name="PleaseInputPatientAge" xml:space="preserve">
+    <value>请输入病人年龄</value>
+  </data>
+  <data name="PleaseInputPatientAgeUnit" xml:space="preserve">
+    <value>请选择病人年龄单位</value>
+  </data>
+  <data name="PleaseInputPatientName" xml:space="preserve">
+    <value>请输入病人姓名</value>
+  </data>
+  <data name="PleaseInputPatientNO" xml:space="preserve">
+    <value>请输入病人号</value>
+  </data>
+  <data name="PleaseInputPatientSex" xml:space="preserve">
+    <value>请选择病人性别</value>
+  </data>
+  <data name="PleaseInputRemark" xml:space="preserve">
+    <value>请输入备注</value>
+  </data>
+  <data name="PleaseInputSender" xml:space="preserve">
+    <value>请输入送检者</value>
+  </data>
+  <data name="PleaseInputTreatArea" xml:space="preserve">
+    <value>请输入病区</value>
+  </data>
+  <data name="PleaseInputTreatID" xml:space="preserve">
+    <value>请输入就诊号</value>
+  </data>
+  <data name="UserOrPasswdError" xml:space="preserve">
+    <value>用户名或密码错误，请重试或联系管理员！</value>
+  </data>
+  <data name="DeletedTasks" xml:space="preserve">
+    <value>删除成功任务：</value>
+  </data>
+  <data name="UndeletedTasks" xml:space="preserve">
+    <value>未删除成功任务：</value>
+  </data>
+  <data name="ResultOfDeletedTask" xml:space="preserve">
+    <value>任务已被删除，结果不应该上传</value>
+  </data>
+  <data name="QCDeleteWarning" xml:space="preserve">
+    <value>确定删除质控品？</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>已创建</value>
+  </data>
+  <data name="Downloaded" xml:space="preserve">
+    <value>已下发</value>
+  </data>
+  <data name="TestOver" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="InputDayWarning" xml:space="preserve">
+    <value>有效天数只允许输入1~1000的整数</value>
+  </data>
+  <data name="InputDiluteMulitleWarning" xml:space="preserve">
+    <value>稀释倍数只允许输入1~1600的整数</value>
+  </data>
+  <data name="InputIncubateTimeWarning" xml:space="preserve">
+    <value>温育时间只允许输入1~100的整数</value>
+  </data>
+  <data name="InputItemRangeERR" xml:space="preserve">
+    <value>参考范围设置错误</value>
+  </data>
+  <data name="InputLengthMaxWarning" xml:space="preserve">
+    <value>最长只能输入30个字符</value>
+  </data>
+  <data name="InputLineOneWarning" xml:space="preserve">
+    <value>线性低值只允许0~10000的数字</value>
+  </data>
+  <data name="InputLineTwoWarning" xml:space="preserve">
+    <value>线性高值只允许0~100000的数字</value>
+  </data>
+  <data name="InputLOnebiggerthanLTwoWarning" xml:space="preserve">
+    <value>错误设置：线性低值大于线性高值</value>
+  </data>
+  <data name="InputProjNameConflict" xml:space="preserve">
+    <value>项目重名错误</value>
+  </data>
+  <data name="InputReagentVolumeWarining" xml:space="preserve">
+    <value>试剂用量只允许输入1~200的整数</value>
+  </data>
+  <data name="InputSampleVolumeWarining" xml:space="preserve">
+    <value>样本用量只允许输入1~200的整数</value>
+  </data>
+  <data name="InputStepOneERR" xml:space="preserve">
+    <value>一步数据错误</value>
+  </data>
+  <data name="InputStepTwoERR" xml:space="preserve">
+    <value>二步数据错误</value>
+  </data>
+  <data name="Arranged" xml:space="preserve">
+    <value>已编排</value>
+  </data>
+  <data name="Calibrated" xml:space="preserve">
+    <value>已校准</value>
+  </data>
+  <data name="Calibrating" xml:space="preserve">
+    <value>正在校准</value>
+  </data>
+  <data name="FitException" xml:space="preserve">
+    <value>曲线拟合异常</value>
+  </data>
+  <data name="NeedCalibrate" xml:space="preserve">
+    <value>需要校准</value>
+  </data>
+  <data name="UnArranged" xml:space="preserve">
+    <value>未编排</value>
+  </data>
+  <data name="UnDownloadedTask" xml:space="preserve">
+    <value>未下发校准任务：</value>
+  </data>
+  <data name="RepeatTimeCanNotBeZero" xml:space="preserve">
+    <value>测试重复次数不允许为0</value>
+  </data>
+  <data name="ClibChartNameReal" xml:space="preserve">
+    <value>浓度发光真实曲线</value>
+  </data>
+  <data name="PleaseInputDepartment" xml:space="preserve">
+    <value>请输入送检科室</value>
+  </data>
+  <data name="NormalTest" xml:space="preserve">
+    <value>常规测试</value>
+  </data>
+  <data name="QulityControlTest" xml:space="preserve">
+    <value>质控测试</value>
+  </data>
+  <data name="PrgFormText_StepMotorGo" xml:space="preserve">
+    <value>正在将换位装置移动到返程组件位置, 请稍等...</value>
+  </data>
+  <data name="StepMotorGo_NOK" xml:space="preserve">
+    <value>换位装置移动到返程组件位置失败!</value>
+  </data>
+  <data name="StepMotorGo_OK" xml:space="preserve">
+    <value>换位装置移动到返程组件位置成功，请放置测量需要的杯子并点击确定开始测量室测量</value>
+  </data>
+  <data name="InputFormulaWarning" xml:space="preserve">
+    <value>输入公式错误</value>
+  </data>
+  <data name="InputSampleTypeWarning" xml:space="preserve">
+    <value>样本类型只支持 [尿液],[血清]!</value>
+  </data>
+  <data name="InputSampleType_Serum" xml:space="preserve">
+    <value>血清</value>
+  </data>
+  <data name="InputSampleType_Urine" xml:space="preserve">
+    <value>尿液</value>
+  </data>
+  <data name="PleaseCalibrateReagent" xml:space="preserve">
+    <value>号任务的测试浓度值未能准确计算，请及时校准试剂</value>
+  </data>
+  <data name="DownloadedTaskCanNotBeDeleted" xml:space="preserve">
+    <value>不能删除已下发任务： </value>
+  </data>
+  <data name="ImportFailed" xml:space="preserve">
+    <value>项目导入失败</value>
+  </data>
+  <data name="ItemOverwriteWarning" xml:space="preserve">
+    <value>项目已经在数据库存在！！点击确定覆盖数据库内容，取消操作请点击取消</value>
+  </data>
+  <data name="OverwriteExisitItem" xml:space="preserve">
+    <value>覆盖项目：</value>
+  </data>
+  <data name="ReagentNotFoundInReagentPackage" xml:space="preserve">
+    <value> 试剂未在试剂架上找到，该试剂对应任务将不会被创建</value>
+  </data>
+  <data name="ReagentAlreadyExisit" xml:space="preserve">
+    <value>项目的试剂已存在，不允许同是插入相同项目试剂，请立即拔出，拔出之后请按确认按钮</value>
+  </data>
+  <data name="Undefine_Error" xml:space="preserve">
+    <value>未定义错误</value>
+  </data>
+  <data name="Database_Connection_Exception" xml:space="preserve">
+    <value>数据库连接异常</value>
+  </data>
+  <data name="ItemDeleted" xml:space="preserve">
+    <value>号项目已被删除，不允许插入该项目试剂</value>
+  </data>
+  <data name="AllArmsPour_OK" xml:space="preserve">
+    <value>加样臂灌注成功</value>
+  </data>
+  <data name="DeviceResume_NOK" xml:space="preserve">
+    <value>恢复加样失败</value>
+  </data>
+  <data name="DeviceResume_OK" xml:space="preserve">
+    <value>恢复加样成功</value>
+  </data>
+  <data name="DeviceSuspend_NOK" xml:space="preserve">
+    <value>暂停加样失败</value>
+  </data>
+  <data name="DeviceSuspend_OK" xml:space="preserve">
+    <value>暂停加样成功</value>
+  </data>
+  <data name="LeftArmPour_NOK" xml:space="preserve">
+    <value>左臂灌注失败</value>
+  </data>
+  <data name="MachineStatus_IDLE" xml:space="preserve">
+    <value>空闲</value>
+  </data>
+  <data name="MachineStatus_ARRANGING" xml:space="preserve">
+    <value>编排</value>
+  </data>
+  <data name="MachineStatus_RUNNING" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="PrgFormText_DeviceResume" xml:space="preserve">
+    <value>正在执行恢复加样测试, 请稍等...</value>
+  </data>
+  <data name="PrgFormText_DeviceSuspend" xml:space="preserve">
+    <value>正在执行暂停加样测试, 请稍等...</value>
+  </data>
+  <data name="RightArmPour_NOK" xml:space="preserve">
+    <value>右臂臂灌注失败</value>
+  </data>
+  <data name="ReagentValueInvalid" xml:space="preserve">
+    <value>无效试剂请拔出</value>
+  </data>
+  <data name="SampleWasExtracted" xml:space="preserve">
+    <value>样本可能已被移除</value>
+  </data>
+  <data name="MachineConnection_NOK" xml:space="preserve">
+    <value>中位机连接失败</value>
+  </data>
+  <data name="MachineStatus_SUSPEND" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="MachineStatus_Unknown" xml:space="preserve">
+    <value>无法获取</value>
+  </data>
+  <data name="Machine_Status" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="ItemRepeats" xml:space="preserve">
+    <value>存在相同名字项目，请检查后再导入导出</value>
+  </data>
+  <data name="ReagentNotEnough" xml:space="preserve">
+    <value>试剂数量不够，请重新编排</value>
+  </data>
+  <data name="UartErrorInfo" xml:space="preserve">
+    <value>串口打开失败，请重新选择</value>
+  </data>
+  <data name="MachineStatus_UNDEFINED" xml:space="preserve">
+    <value>未定义</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>已连接</value>
+  </data>
+  <data name="Disconnected" xml:space="preserve">
+    <value>未连接</value>
+  </data>
+  <data name="SampleTestOver_Reminder" xml:space="preserve">
+    <value>测试完成</value>
+  </data>
+  <data name="SampleTestOver_Reminder_Title" xml:space="preserve">
+    <value>样本测试</value>
+  </data>
+  <data name="Reconnect" xml:space="preserve">
+    <value>系统将重新连接并初始化，请点击确定前确保机器处于非工作状态</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>告警</value>
+  </data>
+  <data name="ImportFileError" xml:space="preserve">
+    <value>导入文件格式有误请检查</value>
+  </data>
+  <data name="ItemIDRepeat" xml:space="preserve">
+    <value>存在相同ID项目，请检查后再导入导出</value>
+  </data>
+  <data name="FirstStepReagentCountError" xml:space="preserve">
+    <value>一步法指定试剂个数与实际试剂个数不相符，该项目未被导入</value>
+  </data>
+  <data name="SecondStepReagentCountError" xml:space="preserve">
+    <value>二步法指定试剂个数与实际试剂个数不相符，该项目未被导入</value>
+  </data>
+  <data name="SampleRemove_NOTAllowed" xml:space="preserve">
+    <value>该样本还未从样本架移除，不允许删除该样本结果信息</value>
+  </data>
+  <data name="MachineStatus_INIT" xml:space="preserve">
+    <value>初始化</value>
+  </data>
+  <data name="MachineStatus_POUR" xml:space="preserve">
+    <value>灌注</value>
+  </data>
+  <data name="NoInputAddSample" xml:space="preserve">
+    <value>请在二步法的第二步“样本用量”栏填写内容</value>
+  </data>
+  <data name="NoInputDay" xml:space="preserve">
+    <value>请在“有效天数”栏填写内容</value>
+  </data>
+  <data name="NoInputDiluteMulitle" xml:space="preserve">
+    <value>请在“稀释倍数栏”栏填写内容</value>
+  </data>
+  <data name="NoInputFullname" xml:space="preserve">
+    <value>请在“全称”栏填写内容</value>
+  </data>
+  <data name="NoInputIncubateTimeOne" xml:space="preserve">
+    <value>请在一步法“温育时间”栏填写内容</value>
+  </data>
+  <data name="NoInputIncubateTimeTwo" xml:space="preserve">
+    <value>请在二步法的第二步“温育时间”栏填写内容</value>
+  </data>
+  <data name="NoInputItem" xml:space="preserve">
+    <value>请在“项目”栏填写内容</value>
+  </data>
+  <data name="NoInputLinehigh" xml:space="preserve">
+    <value>请在“线性高值”栏填写内容</value>
+  </data>
+  <data name="NoInputLinelow" xml:space="preserve">
+    <value>请在“线性低值”栏填写内容</value>
+  </data>
+  <data name="NoInputSampleVolume" xml:space="preserve">
+    <value>请在一步法“样本用量”栏填写内容</value>
+  </data>
+  <data name="NoSelDesbit" xml:space="preserve">
+    <value>请选择“小数位数”</value>
+  </data>
+  <data name="NoSelFirstcups" xml:space="preserve">
+    <value>请选择一步法“试剂个数”</value>
+  </data>
+  <data name="NoSelMeatype" xml:space="preserve">
+    <value>请选择“测试类型”</value>
+  </data>
+  <data name="NoSelSecondcups" xml:space="preserve">
+    <value>请选择二步法第二步“试剂个数”</value>
+  </data>
+  <data name="NoSelsteps" xml:space="preserve">
+    <value>请选择“测试方法”</value>
+  </data>
+  <data name="ClibrateResultSelectFAIL" xml:space="preserve">
+    <value>校准结果选择失败</value>
+  </data>
+  <data name="ClibrateResultSelectOK" xml:space="preserve">
+    <value>校准结果选择成功</value>
+  </data>
+  <data name="CalibrateResultNotExisit" xml:space="preserve">
+    <value>校准结果不存在</value>
+  </data>
+  <data name="MaintTaskProgFormText" xml:space="preserve">
+    <value>正在执行仪器维护, 请稍等...</value>
+  </data>
+  <data name="MaintTask_BGWTest" xml:space="preserve">
+    <value>BGW</value>
+  </data>
+  <data name="MaintTask_LCLEFTTest" xml:space="preserve">
+    <value>LC-Left</value>
+  </data>
+  <data name="MaintTask_LCRIGHTTest" xml:space="preserve">
+    <value>LC-Right</value>
+  </data>
+  <data name="SysTestType_BGWTest" xml:space="preserve">
+    <value>BGW</value>
+  </data>
+  <data name="SysTestType_LC_LeftTest" xml:space="preserve">
+    <value>LC-Left</value>
+  </data>
+  <data name="SysTestType_LC_RightTest" xml:space="preserve">
+    <value>LC-Right</value>
+  </data>
+  <data name="MaintainResult_NOK" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="MaintainResult_OK" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="SystemTest_ArmsPour" xml:space="preserve">
+    <value>加样臂灌注</value>
+  </data>
+  <data name="SystemTest_LuminoPour" xml:space="preserve">
+    <value>测量室灌注</value>
+  </data>
+  <data name="SystemTest_WashStationPour" xml:space="preserve">
+    <value>清洗站灌注</value>
+  </data>
+  <data name="MaintTask_ArmsClean" xml:space="preserve">
+    <value>加样臂管路清洗</value>
+  </data>
+  <data name="MaintTask_Execution_NOK" xml:space="preserve">
+    <value>待执行</value>
+  </data>
+  <data name="MaintTask_Execution_OK" xml:space="preserve">
+    <value>已执行</value>
+  </data>
+  <data name="MaintTask_LuminoClean" xml:space="preserve">
+    <value>测量室管路清洗</value>
+  </data>
+  <data name="MaintTask_WashStationClean" xml:space="preserve">
+    <value>清洗站管路清洗</value>
+  </data>
+  <data name="QCNameNull" xml:space="preserve">
+    <value>质控测试是指控品不能为空或未插入项目所对应试剂</value>
+  </data>
+  <data name="MaintTask_Send_NOK" xml:space="preserve">
+    <value>任务下发失败，请重新执行</value>
+  </data>
+  <data name="MaintTask_Send_OK" xml:space="preserve">
+    <value>任务下发成功，请等待测试结果上传</value>
+  </data>
+  <data name="QCNameAlreadyExisit" xml:space="preserve">
+    <value>质控品名重复，请重新输入质控品名</value>
+  </data>
+  <data name="ReagentRemoveWarning" xml:space="preserve">
+    <value>试剂被移除！所有和该试剂相关的任务都会被移除！</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>基蛋生物科技股份有限公司</value>
+  </data>
+  <data name="Exit_Reminder" xml:space="preserve">
+    <value>是否退出？</value>
+  </data>
+  <data name="InstrumentName" xml:space="preserve">
+    <value>全自动化学发光免疫分析仪</value>
+  </data>
+  <data name="MeanSDInputError" xml:space="preserve">
+    <value>均值和方差值允许输入数字</value>
+  </data>
+  <data name="QCResultDeleteWarning" xml:space="preserve">
+    <value>确定删除质控结果？</value>
+  </data>
+  <data name="ComputerConc" xml:space="preserve">
+    <value>计算浓度</value>
+  </data>
+  <data name="ExpectedConc" xml:space="preserve">
+    <value>期望浓度</value>
+  </data>
+  <data name="RelativeConc" xml:space="preserve">
+    <value>相对偏差</value>
+  </data>
+  <data name="MachineStatus_Arm_Pour" xml:space="preserve">
+    <value>机械臂灌注</value>
+  </data>
+  <data name="MachineStatus_BGW" xml:space="preserve">
+    <value>BGW测试</value>
+  </data>
+  <data name="MachineStatus_ClearCup" xml:space="preserve">
+    <value>清杯</value>
+  </data>
+  <data name="MachineStatus_CM_Measure" xml:space="preserve">
+    <value>测量室测量</value>
+  </data>
+  <data name="MachineStatus_CM_Pour" xml:space="preserve">
+    <value>测量室灌注</value>
+  </data>
+  <data name="MachineStatus_LC_LEFT" xml:space="preserve">
+    <value>LC_LEFT测试</value>
+  </data>
+  <data name="MachineStatus_LC_RIGHT" xml:space="preserve">
+    <value>LC_RIGHT测试</value>
+  </data>
+  <data name="MachineStatus_WS_Pour" xml:space="preserve">
+    <value>清洗站灌注</value>
+  </data>
+  <data name="AddOrEditActionWarning" xml:space="preserve">
+    <value>当前界面正处于添加或编辑状态，不能进行其他操作！</value>
+  </data>
+  <data name="SwitchFormWarning" xml:space="preserve">
+    <value>添加或编辑操作未完成，不能切换到其他界面！</value>
+  </data>
+  <data name="ArmPour_NOK" xml:space="preserve">
+    <value>双臂灌注失败！</value>
+  </data>
+  <data name="MachineStatus_Arm_Clean" xml:space="preserve">
+    <value>加样臂管路清洗</value>
+  </data>
+  <data name="MachineStatus_MS_Clean" xml:space="preserve">
+    <value>测量室管路测试</value>
+  </data>
+  <data name="MachineStatus_Pipe_Clean" xml:space="preserve">
+    <value>清洗站管路清洗</value>
+  </data>
+  <data name="PrgFormText_PrimiingFlow" xml:space="preserve">
+    <value>正在执行整机灌注，请稍等...</value>
+  </data>
+  <data name="InputInfoLostERR" xml:space="preserve">
+    <value>输入信息不全，请将必要信息填写完整</value>
+  </data>
+  <data name="LogLinear" xml:space="preserve">
+    <value>双对数线性</value>
+  </data>
+  <data name="LogParams4" xml:space="preserve">
+    <value>双对数4参数</value>
+  </data>
+  <data name="LogParams5" xml:space="preserve">
+    <value>双对数5参数</value>
+  </data>
+  <data name="Params4" xml:space="preserve">
+    <value>4参数</value>
+  </data>
+  <data name="Params5" xml:space="preserve">
+    <value>5参数</value>
+  </data>
+  <data name="Spline" xml:space="preserve">
+    <value>样条</value>
+  </data>
+  <data name="SampleWasDeleted" xml:space="preserve">
+    <value>样本已被删除，结果插入不成功</value>
+  </data>
+  <data name="MaintainResult_Running" xml:space="preserve">
+    <value>执行中</value>
+  </data>
+  <data name="ItemSetting" xml:space="preserve">
+    <value>项目设置</value>
+  </data>
+  <data name="ItemSetting_ItemDelNOK" xml:space="preserve">
+    <value>删除项目失败</value>
+  </data>
+  <data name="IncubatorTemp" xml:space="preserve">
+    <value>温育槽温度</value>
+  </data>
+  <data name="InputSampleVolumeWarining1" xml:space="preserve">
+    <value>样本用量只允许输入0~200的整数</value>
+  </data>
+  <data name="Exceeds_10_X" xml:space="preserve">
+    <value>失控（WESTGARD 10-X）</value>
+  </data>
+  <data name="Exceeds_1_3S" xml:space="preserve">
+    <value>失控（WESTGARD 1-3S）</value>
+  </data>
+  <data name="Exceeds_2_2S" xml:space="preserve">
+    <value>失控（WESTGARD 2-2S）</value>
+  </data>
+  <data name="Exceeds_4_1S" xml:space="preserve">
+    <value>失控（WESTGARD 4-1S）</value>
+  </data>
+  <data name="Exceeds_7_T" xml:space="preserve">
+    <value>失控（WESTGARD 7-T）</value>
+  </data>
+  <data name="Exceeds_R_4S" xml:space="preserve">
+    <value>失控（WESTGARD R-4S）</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>  </value>
+  </data>
+  <data name="Warning_1_2S" xml:space="preserve">
+    <value>警告（WESTGARD 1-2S）</value>
+  </data>
+  <data name="Warning_7_X" xml:space="preserve">
+    <value>警告（WESTGARD 7-X）</value>
+  </data>
+  <data name="Warning_8_X" xml:space="preserve">
+    <value>警告（WESTGARD 8-X）</value>
+  </data>
+  <data name="Warning_9_X" xml:space="preserve">
+    <value>警告（WESTGARD 9-X）</value>
+  </data>
+  <data name="WithinControl" xml:space="preserve">
+    <value>在控</value>
+  </data>
+  <data name="None1" xml:space="preserve">
+    <value>  </value>
+  </data>
+  <data name="Warning_3_1S" xml:space="preserve">
+    <value>警告（WESTGARD 3-1S）</value>
+  </data>
+  <data name="ItemNull" xml:space="preserve">
+    <value>测试项目不能为空</value>
+  </data>
+  <data name="QCItemNull" xml:space="preserve">
+    <value>质控项目不能为空</value>
+  </data>
+  <data name="SDNegErr" xml:space="preserve">
+    <value>标准差不能为零或负数！</value>
+  </data>
+  <data name="ClibrateResultIsNotValid" xml:space="preserve">
+    <value>校准结果无效，不能选用！</value>
+  </data>
+  <data name="ItemSetting_ItemUpdateNOK" xml:space="preserve">
+    <value>项目设置更新失败</value>
+  </data>
+  <data name="CannotDownloadTask" xml:space="preserve">
+    <value>仪器正忙或者左加样区没有反应杯，不能下发任务！</value>
+  </data>
+  <data name="MaintTask_Complete_Fail" xml:space="preserve">
+    <value>任务执行失败</value>
+  </data>
+  <data name="MaintTask_Complete_Success" xml:space="preserve">
+    <value>任务执行成功</value>
+  </data>
+  <data name="DispenseOver" xml:space="preserve">
+    <value>已加样</value>
+  </data>
+  <data name="ReagentStirNotOK" xml:space="preserve">
+    <value>试剂摇匀时间不足，确定分配任务吗？</value>
+  </data>
+  <data name="ASKForPowerDown" xml:space="preserve">
+    <value>退出将关闭系统，确定关闭系统吗？</value>
+  </data>
+</root>
